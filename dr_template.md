@@ -12,14 +12,14 @@
 |-------|---------|------|-----|----|
 | EC2 | Running the web application | t3.micro | 3 | Replicated in us-east-2 |
 | EC2 | Running the web application | t3.micro | 3 | Deployed to DR in us-west-1 |
-| EKS | For monitoring stack | t3.medium | 2 nodes | Replicated in us-east-2 |
-| EKS | For monitoring stack | t3.medium | 2 nodes | Deployed to DR in us-west-1 |
+| EKS | For monitoring stack | t3.medium | 1 cluster, 2 nodes | Replicated in us-east-2 |
+| EKS | For monitoring stack | t3.medium | 1 cluster, 2 nodes | Deployed to DR in us-west-1 |
 | VPC | Virtual private network | 3 subnets | 1 | Created in multiple locations us-east-2a, us-east-2b, us-east-2c |
 | VPC | Virtual private network | 2 subnets | 1 | Created in multiple locations us-west-1a, us-west-1b |
 | ALB | Load balancer for the web application | N/A | 1 | Created in us-east-2 |
 | ALB | Load balancer for the web application | N/A | 1 |Created in us-west-1 |
-| RDS | Backend database running for the web application | db.t3.micro | 2 | Replicated in us-east-2 |
-| RDS | Backend database running for the web application | db.t3.micro | 2 | Deployed to DR in us-west-1 |
+| RDS | Backend database running for the web application | db.t3.micro | 1 cluster, 2 nodes | Replicated in us-east-2 |
+| RDS | Backend database running for the web application | db.t3.micro | 1 cluster, 2 nodes | Deployed to DR in us-west-1 |
 | GitHub | Repo for storing the Terraform Code | N/A | 1 | GitHub |
 
 ### Descriptions
