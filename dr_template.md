@@ -38,8 +38,8 @@
 
 ## Steps:
 
-1. Point DNS to us-west-1 region.
+1. Point DNS to zone2 region.
     * This can be done with a name provider in Amazon route 53.
-2. Failover database replication instances to us-west-1.
+2. Failover database replication instances to zone2.
     * Manually force secondary region to become primary at the database level.
     * Automatically failover the database by health checks.
